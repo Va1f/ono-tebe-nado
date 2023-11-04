@@ -1,15 +1,15 @@
 .header {
   display: grid;
-  grid-template-columns: 240px 1fr 240px;
+  grid-template-columns: 1fr 248px 1fr;
   align-items: center;
-  gap: 355px;
   margin: 92px 49px 96px 51px;
 }
 
 .header__links-list {
   display: flex;
   gap: 32px;
-  width: 500px;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .header__links-list-item {
@@ -36,10 +36,14 @@
   line-height: 24.3px;
 }
 
+.address__header {
+  justify-self: flex-end;
+}
+
 .cover {
   position: relative;
   z-index: 0;
-  color: #FFF;
+  color: #fff;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -53,7 +57,7 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
@@ -62,39 +66,44 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 165px 50px 10px 50px;
+  padding: 165px 50px 0 50px;
   font-weight: 700;
   font-size: 100px;
-  line-height: 115%;
   letter-spacing: 30px;
   text-transform: uppercase;
 }
 
+.aligned-text_left {
+  line-height: 115%;
+}
+
 .aligned-text_center {
+  line-height: 100%;
   text-align: center;
 }
 
 .aligned-text_right {
+  line-height: 100%;
   text-align: right;
-}
-
-.no-letter-spacing {
-  margin-left: 35px;
 }
 
 .letter-spacing-extended {
   letter-spacing: 60px;
 }
 
+.no-letter-spacing {
+  letter-spacing: initial;
+}
+
 .cover__description {
-  padding: 135px 50px 50px 0;
   position: relative;
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  gap: 83px;
   align-items: center;
-  color: #FFF;
+  gap: 81px;
+  padding: 135px 50px 50px 0;
+  color: #fff;
   font-size: 22px;
 }
 
@@ -104,15 +113,14 @@
   font-style: normal;
   line-height: 28px;
   text-transform: uppercase;
-  word-spacing: 18px;
-  white-space: nowrap;
+  word-spacing: 17px;
 }
 
 .bet-button {
   width: 257px;
   height: 52px;
-  border: 1px solid #FFF;;
-  color: #FFF;
+  border: 1px solid #fff;
+  color: #fff;
   font-size: 22px;
   line-height: normal;
   text-transform: uppercase;
@@ -146,7 +154,7 @@
   flex-grow: 1;
   width: 430px;
   min-height: 450px;
-  color: #FFF;
+  color: #fff;
 }
 
 .card-link {
@@ -216,6 +224,7 @@
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
+  justify-items: center;
   gap: 25px;
   margin: 182px 50px;
 }
@@ -225,7 +234,7 @@
   height: 240px;
   border-radius: 50%;
   padding: 63px 46px;
-  background-color: black;
+  background-color: #000;
 }
 
 .about__column-left {
@@ -253,8 +262,8 @@
   display: flex;
   justify-content: space-between;
   gap: 168px;
-  margin: 180px 50px 124px;
-  color: black;
+  margin: 180px 50px 90px;
+  color: #000;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
@@ -262,7 +271,7 @@
 
 .footer__social-list {
   display: flex;
-  gap: 40px;
+  gap: 48px;
   width: 240px;
   list-style: none;
 }
